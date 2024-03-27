@@ -3,7 +3,8 @@ package com.example.bazaarcorner
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.example.bazaarcorner.ui.screens.home.HomeScreen
+import androidx.navigation.compose.rememberNavController
+import com.example.bazaarcorner.ui.navigation.AppNavHost
 import com.example.bazaarcorner.ui.theme.BazaarCornerTheme
 
 class MainActivity : ComponentActivity() {
@@ -11,8 +12,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             BazaarCornerTheme(darkTheme = false) {
-                //Home-001: Placeholer remove when navigation is implemented
-                HomeScreen()
+                val navController = rememberNavController()
+                AppNavHost(navController)
             }
         }
     }
