@@ -23,4 +23,5 @@ val searchTextFieldPlaceHolderContent = Color(0xFFa8a7a8)
 val textFieldTextColor = Color(0xFF222122)
 
 //Home
+val transparent = Color (0x00000000)
 val backgroundHome = Color(0xFFF5F5F5)
